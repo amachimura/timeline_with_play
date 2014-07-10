@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="@routes.Assets.at("bootstrap-3.1.1-dist/css/bootstrap.min.css")">
+<link rel="stylesheet" href="@routes.Assets.at("css/style.css")">
+<!--original scripts-->
+</head>
+<body>
+
+<div class="container">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TimeLine</a>
+        </div>
+        
+      </div>
+    
+
+
+<div id="content">
+	<h3>Today's timeline</h3>
+	<div class="row">
+		<div class="col-sm-4">
+			<pre>
+<i class="icon-time"></i>勤務時間
+<form class="form-inline">
+<input type="time" id="start">～<input type="time" id="end">
+<button class="btn btn-success btn-small"><i class="icon-refresh"></i>更新</button>
+</form>
+			</pre>
+
+
+			<table class="table" id="timelinetable">
+				<thead>
+					<tr>
+						<th>time</th>
+						<th>event</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-8 sidemenu"></div>
+	</div>
+</div><!--container-->
+</div><!--/timeline-->
+    <script type="text/javascript" src="@routes.Assets.at("bower_components/jquery/jquery.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("bower_components/underscore/underscore.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("bower_components/backbone/backbone.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("d3.min.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("json2.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("bootstrap-3.1.1-dist/js/bootstrap.min.js")"></script>
+<!--Original js files-->
+    <script type="text/javascript" src="@routes.Assets.at("javascript/index.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("javascript/model.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("javascript/router.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("javascript/event.js")"></script>
+    <script type="text/javascript" src="@routes.Assets.at("javascript/view.js")"></script>
+</body>
+</html>
